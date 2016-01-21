@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="reactPOC">
+
+<head>
+    <meta charset="UTF-8">
+    <title>React Angular POC</title>
+    <!-- inject:css -->
+    <link rel="stylesheet" href="/assets/style.css">
+    <!-- endinject -->
+</head>
+
+<body ng-controller="appCtrl as ctrl">
+
+<div id="targetNode"></div>
+
+<div class="form">
+    Rows: <input class="rowsNo" type="number" ng-model="ctrl.rows" style="width:80px;">
+    <img class="loader" ng-show="ctrl.working" src="assets/loader.gif">
+
+    <div ng-if="!ctrl.working" class="renderBtn angularBtn" ng-click="ctrl.render('angular')">Angular Render</div>
+    <div ng-if="!ctrl.working" class="renderBtn reactBtn" ng-click="ctrl.render('react')">React Render</div>
+</div>
+<div class="form" ng-if="ctrl.renderingTime">
+    <span> Rendering time: {{ctrl.renderingTime}} sec</span>
+    <button ng-click="ctrl.clean()">Clean</button>
+    <div class="renderResult {{ctrl.viewEngine}}"> </div>
+</div>
+<hr>
+<div id="contentWrap"></div>
+
+
+
+</body>
+
+<script src="/vendor/angular/angular.js"></script>
+<script src="/vendor/react/react.js"></script>
+<script src="/vendor/react/react-dom.js"></script>
+<!-- inject:js -->
+<script src="/app/app.js"></script>
+<script src="/app/components/hello.js"></script>
+<script src="/app/components/table-render.factory.js"></script>
+<!-- endinject -->
+
+<script type="text/ng-template" id="angularViewRendering.html">
+    <div>
+        <table>
+            <tr ng-repeat="row in ctrl.data">
+                <td ng-repeat="cell in row">{{::cell}}</td>
+            </tr>
+        </table>
+    </div>
+</script>
+
+<script type="text/ng-template" id="reactViewRendering.html">
+    <div>
+        <table-render data="ctrl.data"></table-render>
+    </div>
+</script>
+
+</html>

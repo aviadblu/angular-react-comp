@@ -1,0 +1,75 @@
+body {
+    padding: 30px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td {
+    border: 1px solid black;
+}
+
+#contentWrap {
+    background: url(./top.png) center top 50px no-repeat;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+.form {
+    margin-bottom:10px;
+}
+
+.renderBtn {
+    display: inline-block;
+    height:100%;
+    margin:0;
+    padding:3px;
+    cursor: pointer;
+    border: 1px solid #CCC;
+    background-color: #E6E6E6;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center right;
+    padding-right: 40px;
+    borer-radius: 2px;
+}
+
+.renderBtn:hover {
+    border-color: #000;
+}
+
+.rowsNo {
+    height: 24px;
+    line-height: 24px;
+    padding:0px;
+    margin: 0px;
+}
+
+.angularBtn {
+    background-image: url(./angular.png);
+}
+
+.reactBtn {
+    background-image: url(./react.png);
+}
+
+.renderResult {
+    height:30px;
+    line-height:30px;
+    background-size: contain;
+}
+
+.renderResult.react {
+    background-image: url(./react.png);
+}
+
+.renderResult.angular {
+    background-image: url(./angular.png);
+}
+
+
+
