@@ -11,8 +11,6 @@
 
 <body ng-controller="appCtrl as ctrl">
 
-<div id="targetNode"></div>
-
 <div class="form">
     Rows: <input class="rowsNo" type="number" ng-model="ctrl.rows" style="width:80px;">
     <img class="loader" ng-show="ctrl.working" src="assets/loader.gif">
@@ -37,7 +35,6 @@
 <script src="/vendor/react/react-dom.js"></script>
 <!-- inject:js -->
 <script src="/app/app.js"></script>
-<script src="/app/components/hello.js"></script>
 <script src="/app/components/table-render.factory.js"></script>
 <!-- endinject -->
 
