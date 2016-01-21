@@ -10,9 +10,11 @@ App running at  [http://localhost:4000] [app]
 
 [app]: <http://localhost:4000>
 
-## Screenshot
+## Screenshots
 
 ![scrsh](http://i.imgur.com/YtVsVFt.png)
+
+----
 
 ![scrsh](http://i.imgur.com/ugzTcTo.png)
 
