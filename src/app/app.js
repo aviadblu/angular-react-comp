@@ -32,7 +32,6 @@ app.controller("appCtrl", function ($scope, $compile, $timeout, $templateRequest
             startTime = new Date().getTime();
             console.info("start: " + startTime);
             var data = [];
-            var rows = 1000;
             for (var i = 0; i < ctrl.rows; i++) {
                 data.push([
                     "col_" + i + "_1",
