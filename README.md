@@ -1,8 +1,16 @@
 # Angular table data rendering VS React table data rendering
 
 ## installation
+```sh
+$ npm install
+$ bower install
+$ gulp
+```
+App running at  [http://localhost:4000] [app]
 
-1. npm install
-2. bower install
-3. gulp
-4. app running at http://localhost:4000
+[app]: <http://localhost:4000>
+
+License
+----
+
+MIT
